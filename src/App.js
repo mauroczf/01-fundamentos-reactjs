@@ -15,7 +15,7 @@ function App() {
     const response = await api.post(`repositories`, {
       title: "Desafio React BootCamp RocketSeat",
       techs: ["React", "ReactJS", "NodeJS"],
-      url: "https://github.com/Delfio/desafio-conceitos-reactjs"
+      url: "https://github.com/mauroczf/01-fundamentos-reactjs"
     })
     setProject([...project, response.data]);
   }
