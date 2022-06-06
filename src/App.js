@@ -41,9 +41,7 @@ function App() {
           </li>
         ))}
       </ul>
-      <button onClick={() => handleRemoveRepository()}>
-        Remover
-      </button>
+      <button onClick={() => handleRemoveRepository()}>Remover</button>
       <button onClick={handleAddRepository}>Adicionar</button>
     </div>
   );
