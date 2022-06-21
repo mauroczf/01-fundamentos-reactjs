@@ -6,7 +6,7 @@ describe('App Page', () => {
   it('should be able to add a task', async () => {
     render(<TaskList />);
 
-    const taskInput = screen.getByPlaceholderText('Adicionar novo todo');
+    const taskInput = screen.getByPlaceholderText('Adicionar novo to-do');
     const addTaskButton = screen.getByTestId('add-task-button');
 
     fireEvent.change(taskInput, {
