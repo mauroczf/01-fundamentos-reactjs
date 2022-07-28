@@ -1,12 +1,12 @@
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import React from 'react';
-import { TaskList } from '.././components/TaskList';
+import { TaskList } from '../../components/TaskList';
 
 describe('App Page', () => {
   it('should be able to add a task', async () => {
     render(<TaskList />);
 
-    const taskInput = screen.getByPlaceholderText('Adicionar novo to-do');
+    const taskInput = screen.getByPlaceholderText('Adicionar novo todo');
     const addTaskButton = screen.getByTestId('add-task-button');
 
     fireEvent.change(taskInput, {
@@ -54,7 +54,7 @@ describe('App Page', () => {
         value: 'Desafio ReactJS Ignite'
       }
     });
-
+    
     fireEvent.click(addTaskButton);
 
     const addedFirstTaskTitle = screen.getByText('Desafio ReactJS Ignite');
